@@ -26,7 +26,7 @@ class SignUpFormRequest extends FormRequest
         return [
             'email'=>'required|email|unique:users',
             'password'=>'required|min:6',
-            'fullname'=>'required',
+            'name'=>'required',
             'phone'=>'required',
             'address'=>'required',
             'rePassword'=>'required|same:password'
@@ -39,7 +39,7 @@ class SignUpFormRequest extends FormRequest
             'email.unique'=>'Email đã có người sử dụng',
             'password.required'=>'Vui lòng nhập mật khẩu',
             'password.min'=>'Mật khẩu chứa ít nhất 6 kí tự',
-            'fullname.required'=>'Vui lòng nhập họ tên',
+            'name.required'=>'Vui lòng nhập họ tên',
             'rePassword.required'=>'Vui lòng nhập lại mật khẩu',
             'rePassword.same'=>'Mật khẩu không khớp',
             'phone.required'=>'Vui lòng nhập số điện thoại',
